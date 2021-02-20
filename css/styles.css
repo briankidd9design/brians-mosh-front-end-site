@@ -6,6 +6,7 @@ author: Brian Kidd
 email: brian.kidd.one@gmail.com
 website: briankiddmedia.com
 -----------------------------------------------------------*/
+/* Typography */
 html {
   font-size: 62.5%;
 }
@@ -41,6 +42,28 @@ h2 {
 h3 {
   font-size: 3rem;
 }
+/* 
+Links */
+a {
+  text-decoration: none;
+}
+
+.link-arrow {
+  color: var(--color-accent);
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: bold;
+  transition: margin 0.15s;
+}
+
+.link-arrow::after {
+  content: "-->";
+  margin-left: 5px;
+}
+
+.link-arrow:hover::after {
+  margin-left: 10px;
+}
 
 @media screen and (min-width: 1024px) {
   body {
@@ -55,5 +78,8 @@ h3 {
   }
   h3 {
     font-size: 2.4rem;
+  }
+  .link-arrow {
+    font-size: 1.5rem;
   }
 }
