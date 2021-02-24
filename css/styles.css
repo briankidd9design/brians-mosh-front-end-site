@@ -44,6 +44,7 @@ h1,
 h2,
 h3 {
   color: var(--color-headings);
+  line-height: 1.1;
   margin-bottom: 1rem;
 }
 
@@ -549,6 +550,21 @@ Navigation Bar */
 .nav__brand {
   transform: translateY(5px);
 }
+/* 
+Hero */
+.hero {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
+}
+.hero__tagline {
+  font-size: 2rem;
+  color: #b9c3cf;
+  letter-spacing: 1px;
+  margin: 2rem 0 5rem;
+}
+
+.hero__image {
+  width: 100%;
+}
 
 @media screen and (min-width: 1024px) {
   body {
@@ -654,8 +670,17 @@ Navigation Bar */
     max-height: 100%;
     opacity: 1;
   }
-
   .nav__item {
     border: 0;
+  }
+  /* 
+  Hero */
+  .hero {
+    padding-top: 0;
+  }
+
+  .hero__content {
+    text-align: left;
+    align-self: center;
   }
 }
