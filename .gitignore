@@ -1,3 +1,5 @@
 all-components.html
 .DS_Store
 node_modules/
+dist/
+.cache/
