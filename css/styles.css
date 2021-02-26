@@ -8,6 +8,7 @@ website: briankiddmedia.com
 -----------------------------------------------------------*/
 /* image sprites made here https://svgsprit.es/ */
 /* other sprite generator options */
+/* Animations by AOS animations */
 
 /* Typography */
 *,
@@ -51,11 +52,11 @@ h3 {
   color: var(--color-headings);
   line-height: 1.1;
   margin-bottom: 1rem;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 h1 {
-  font-size: 7rem;
+  font-size: 6rem;
 }
 
 h2 {
@@ -94,7 +95,7 @@ a {
   font-size: 2rem;
   font-weight: 600;
   padding: 0.5rem 2rem;
-  white-space: no-wrap;
+  white-space: nowrap;
 }
 
 .badge--primary {
@@ -174,11 +175,11 @@ buttons */
   border-radius: 40px;
   border: 0;
   cursor: pointer;
-  font-size: 1.8 rem;
+  font-size: 1.8rem;
   font-weight: 600;
   margin: 1rem 0;
   outline: 0;
-  padding: 2rem 3rem;
+  padding: 2rem 4vw;
   text-align: center;
   text-transform: uppercase;
   white-space: nowrap;
@@ -259,6 +260,7 @@ buttons */
   border: 0;
   flex-grow: 1;
   padding: 1.5rem 2rem;
+  width: 0;
 }
 
 .input-group .btn {
@@ -316,7 +318,7 @@ buttons */
 }
 
 .plan__price {
-  font-size: 6rem;
+  font-size: 5rem;
 }
 
 .plan__billing-cycle {
@@ -368,6 +370,11 @@ buttons */
   gap: 8rem 4rem;
 }
 
+.block-plans .card {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
 /* .block .card {
   max-width: 500px;
   margin: 0 auto;
@@ -408,7 +415,7 @@ buttons */
   content: close-quote;
 }
 .quote__author {
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: 500;
   font-style: normal;
   margin-bottom: 0;
@@ -417,7 +424,7 @@ buttons */
 .quote__organization {
   color: var(--color-headings);
   opacity: 0.4;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-style: normal;
   margin: 0;
 }
@@ -435,11 +442,16 @@ buttons */
 
 /* Testimonials */
 .testimonial {
-  padding: 3rem 6rem;
+  padding: 3rem;
+}
+.testimonial .quote {
+  margin: 0;
+  font-size: 110%;
 }
 
 .testimonial__image {
   position: relative;
+  margin: 0 3rem;
 }
 
 .testimonial__image > img {
@@ -628,8 +640,9 @@ Hero */
 }
 
 .block-domain__prices {
+  color: var(--color-headings);
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 6rem);
   font-size: 2rem;
   font-weight: 600;
@@ -666,6 +679,7 @@ Showcase Block */
 
 .footer {
   background: #232323;
+  padding-top: 10rem;
 }
 
 .footer__section {
@@ -706,6 +720,10 @@ Showcase Block */
   /* TODO Consider refactoring this and applying this rule to all images. */
   width: 100%;
   max-width: 230px;
+}
+
+.callout-signup {
+  transform: translateY(5rem);
 }
 
 @media screen and (min-width: 1024px) {
@@ -777,6 +795,10 @@ Showcase Block */
   /* grids */
   .grid--1x3 {
     grid-template-columns: 1fr 1fr 1fr;
+  }
+  .testimonial .quote {
+    margin: 2rem 0;
+    font-size: 110%;
   }
 }
 
@@ -878,6 +900,7 @@ Showcase Block */
   }
 
   .footer__copyright {
+    margin-top: 0;
     font-size: 1.5rem;
   }
 
