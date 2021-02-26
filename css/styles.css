@@ -287,11 +287,20 @@ buttons */
   color: #fff;
 }
 
+.card--primary .badge--primary {
+  background: #126de4;
+}
+
 .card--secondary .badge--secondary {
   background: #02cdf1;
 }
 
 /* Plans */
+
+.plan {
+  transition: 0.2s ease-out;
+}
+
 .plan__name {
   color: #fff;
   margin: 0;
@@ -308,7 +317,7 @@ buttons */
   font-size: 2.4rem;
   font-weight: 300;
   opacity: 0.8;
-  margin-right: 1rem;
+  margin-right: 0.5rem;
 }
 
 .plan__description {
@@ -320,6 +329,10 @@ buttons */
 
 .plan .list__item {
   margin-bottom: 2rem;
+}
+
+.plan--popular {
+  transform: scale(1.1);
 }
 
 .plan--popular .card__header {
@@ -334,6 +347,26 @@ buttons */
   top: -6px;
   right: 5%;
 }
+
+.plan:hover {
+  transform: scale(1.05);
+}
+
+.plan--popular:hover {
+  transform: scale(1.15);
+}
+
+/* Plans Block */
+/* rows/columns */
+.block-plans .grid {
+  gap: 8rem 4rem;
+}
+
+.block .card {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
 /* Media */
 .media {
   display: flex;
@@ -480,7 +513,7 @@ buttons */
   --padding-vertical: 6rem;
   padding: var(--padding-vertical) 2rem;
   /* border: 2px solid red; */
-  text-align: center;
+  /* text-align: center; */
 }
 
 .block__header {
@@ -622,6 +655,12 @@ Hero */
   }
   .input {
     font-size: 1.5rem;
+  }
+
+  /* Cards */
+  .card__header,
+  .card__body {
+    padding: 2rem 7%;
   }
   /* Plans */
   .plan__name {
