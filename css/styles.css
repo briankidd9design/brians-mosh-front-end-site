@@ -307,6 +307,7 @@ buttons */
 
 .plan {
   transition: 0.2s ease-out;
+  width: 100%;
 }
 
 .plan__name {
@@ -364,6 +365,7 @@ buttons */
 /* rows/columns */
 .block-plans .grid {
   gap: 8rem 4rem;
+  width: 100%;
 }
 
 .block-plans .card {
@@ -632,7 +634,7 @@ Hero */
   box-shadow: 0 0 30px 20px #e6ebee;
   border: 0;
   margin: 4rem auto;
-  max-width: 670px;
+  max-width: 600px;
 }
 
 .block-domain__prices {
@@ -651,6 +653,7 @@ Hero */
 .feature {
   gap: 4rem 2rem;
   margin: 12rem 0;
+  width: 100%;
 }
 
 .feature:first-of-type {
@@ -859,6 +862,7 @@ Showcase Block */
 
   .feature:nth-of-type(even) .feature__content {
     order: 2;
+    width: 100%;
   }
 
   .plan--popular {

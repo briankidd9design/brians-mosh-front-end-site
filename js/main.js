@@ -4,6 +4,7 @@ collapsibles.forEach((item) =>
     this.classList.toggle("collapsible--expanded");
   })
 );
+AOS.init({disable: 'mobile'});
 
 /********************different ways to write the same algorithm to expand the collapsible container ************************************/ 
 // collapsibles.forEach((item) =>
