@@ -339,10 +339,6 @@ buttons */
   margin-bottom: 2rem;
 }
 
-.plan--popular {
-  transform: scale(1.1);
-}
-
 .plan--popular .card__header {
   position: relative;
 }
@@ -863,6 +859,10 @@ Showcase Block */
 
   .feature:nth-of-type(even) .feature__content {
     order: 2;
+  }
+
+  .plan--popular {
+    transform: scale(1.1);
   }
 
   /* 
